@@ -1,3 +1,6 @@
+import string
+
+
 x="xaa"
 y="axx"
 print(x>y)
@@ -7,5 +10,5 @@ x="gcgcgrue"
 y="true"
 print(x.lower ==y)
 print(x or y)
-num1=input()
+num1=string(input())
 print(type(num1))
