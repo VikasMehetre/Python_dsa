@@ -13,5 +13,5 @@ def insert_sort(A):
     return A    
 
 
-A=[6,4]            
+A=[34,3,6,45,78,4,5,1,9]            
 print(insert_sort(A))
