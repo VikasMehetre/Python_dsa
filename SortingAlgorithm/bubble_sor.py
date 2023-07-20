@@ -8,4 +8,7 @@ def bubble(A):
                 A[j+1]=temp
     return A
 A=[23,56,221,67,5,5,75,21]
-print(bubble(A))            
+print(bubble(A))          
+#worst case when the elemnnts are inthe decreasing order
+# shoild not be used for large sorting
+#   
