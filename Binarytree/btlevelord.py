@@ -26,12 +26,21 @@ class BinaryTree:
             self.postorder(troot._left)                        
             self.postorder(troot._right)
             print(troot._element,end="-->")
-    def count(self,troot):
+    def count(self,troot):  
         if troot:
             x=self.count(troot._left)
             y=self.count(troot._right)
             return x+y+1
-        return 0        
+        return 0 
+    def height(self,troot):
+        if troot:
+            x=self.height(troot._left)       
+            y=self.height(troot._right)
+            if (x>y):
+                return x+1
+            else:
+                return y+1
+        return 0       
     def levelord(self):
         Q=queuelink()
         t=self._root
